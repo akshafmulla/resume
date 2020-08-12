@@ -60,25 +60,24 @@
                             <h4 class="text-light">Front End Developer & Data Scientist</h4>
                         </div>
 
-                        <div>
-                            <div class="sticky-bottom">
-                                <div class="d-flex flex-row text-white align-items-stretch text-center">
-                                    <div class="port-item p-3 bg-home" data-toggle="collapse" data-target="#home">
-                                        <i class="fas fa-home fa-2x d-block"></i>
-                                        <span>Home</span>
-                                    </div>
-                                    <div class="port-item p-3 bg-resume" data-toggle="collapse" data-target="#resume">
-                                        <i class="fas fa-graduation-cap fa-2x d-block"></i>
-                                        <span>Resume</span>
-                                    </div>
-                                    <div class="port-item p-3 bg-work" data-toggle="collapse" data-target="#work">
-                                        <i class="fas fa-folder-open fa-2x d-block"></i>
-                                        <span>Work</span>
-                                    </div>
-                                    <div class="port-item p-3 bg-purple" data-toggle="collapse" data-target="#contact">
-                                        <i class="fas fa-envelope fa-2x d-block"></i>
-                                        <span>Contact</span>
-                                    </div>
+                        <div id="stickyAtTop" class="sticky-top">
+                            <!-- Sticky not working-->
+                            <div class="d-flex flex-row text-white align-items-stretch text-center">
+                                <div class="port-item p-3 bg-home" data-toggle="collapse" data-target="#home">
+                                    <i class="fas fa-home fa-2x d-block"></i>
+                                    <span>Home</span>
+                                </div>
+                                <div class="port-item p-3 bg-resume" data-toggle="collapse" data-target="#resume">
+                                    <i class="fas fa-graduation-cap fa-2x d-block"></i>
+                                    <span>Resume</span>
+                                </div>
+                                <div class="port-item p-3 bg-work" data-toggle="collapse" data-target="#work">
+                                    <i class="fas fa-folder-open fa-2x d-block"></i>
+                                    <span>Work</span>
+                                </div>
+                                <div class="port-item p-3 bg-purple" data-toggle="collapse" data-target="#contact">
+                                    <i class="fas fa-envelope fa-2x d-block"></i>
+                                    <span>Contact</span>
                                 </div>
                             </div>
                         </div>
@@ -519,7 +518,7 @@
                                             <i class="fa fa-phone"></i>
                                         </a>
                                     </div>
-                                    <span class="form-control">+971 504243914</span>
+                                    <span class="form-control"><p>+971 504243914</p></span>
                                 </div>
                             </div>
 
@@ -530,7 +529,7 @@
                                             <i class="fas fa-envelope"></i>
                                         </a>
                                     </div>
-                                    <span class="form-control">akshafmulla@gmail.com</span>
+                                    <span class="form-control"><p>akshafmulla@gmail.com</p></span>
                                 </div>
                             </div>
 
@@ -541,7 +540,7 @@
                                             <i class="fab fa-whatsapp"></i>
                                         </a>
                                     </div>
-                                    <span class="form-control">+971 504243914</span>
+                                    <span class="form-control"><p>+971 504243914</p></span>
                                 </div>
                             </div>
                         </div>
@@ -724,6 +723,9 @@
         $('#showMore-btn9').on('shown.bs.collapse', function() {
             $('#readmore-btn9').text(' Read Less ');
         });
+        window.onscroll = function() {
+            myFunction()
+        };
     </script>
 </body>
 
